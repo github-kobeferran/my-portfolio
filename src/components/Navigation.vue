@@ -20,26 +20,19 @@
         </a>
       </li>
 
-      <Button class="btn-primary" id="show-modal" @click="showModal = true">
-        <i class="fa-solid fa-bars" style="font-size: 2.5rem;"></i>
-      </Button>
     </ul>
-  </nav>
+  </nav>  
+  
 </template>
 
 <script>
-import Button from "./Button";
 
 export default {
   name: "Navigation",
   data() {
     return {
-      scrollPosition: null,
-      showModal: false
+      scrollPosition: null,   
     };
-  },
-  components: {
-    Button,
   },
   methods: {
     updateScroll() {
