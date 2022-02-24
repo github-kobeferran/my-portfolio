@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+$bg-dark: rgb(26, 25, 25);
+$bg-secondary: #333;
+
+$text-primary: #3195FF;
+$text-dark: #333;
+
+$source-sans: 'Source Sans Pro', sans-serif;
+$poppins: 'Poppins', sans-serif;
+
+$transition-speed: 200ms;
+$transition-speed-slower: 1000ms;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return white;
+  }
+}
+
+@mixin set-background($bgcolor) {
+  background-color: $bgcolor;
+  color: set-text-color($bgcolor);
+}

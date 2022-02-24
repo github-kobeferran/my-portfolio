@@ -4,14 +4,16 @@
   </Button>
   <Modal :show="showModal" :isActive="showModal" />
   <Navigation />
-  <Content />  
+  <Cover />    
+  <Projects />  
 </template>
 
 <script>
 import Navigation from './components/Navigation'
-import Content from './components/Content'
+import Cover from './components/Cover'
 import Button from "./components/Button";
 import Modal from './components/Modal'
+import Projects from './components/Projects'
 
 
 export default {
@@ -23,9 +25,10 @@ export default {
     },
     components: {
       Navigation,
-      Content,
+      Cover,
       Button,
-      Modal
+      Modal,
+      Projects
     },    
 }
 </script>

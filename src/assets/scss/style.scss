@@ -1,0 +1,146 @@
+@import "config";
+@import "projects";
+@import "modal";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  // box-sizing: border-box;
+}
+
+body {
+  @include set-background($bg-dark);
+  font-family: $poppins;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  background: $bg-dark;
+  height: 70px;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 20px;
+      margin-right: auto;
+    }
+
+    li {
+      margin: 20px;
+      transition: transform $transition-speed;
+    }
+
+    li:hover {
+      border-bottom: 1px solid $text-primary;
+      transform: scale(0.98);
+      opacity: 0.8;
+    }
+
+    a {
+      color: white;
+    }
+  }
+
+}
+
+.hamburger {
+  width: 70px;
+  height: 70px;    
+  border-radius: 0 !important;      
+  opacity: 0.9;
+}
+
+.navbar.nav-transparent {
+  opacity: 0.75;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+
+  .cover {
+    background: url("../img/cover-images/my-pc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    width: 100%;
+    line-height: 1.4;
+
+    #name {
+      font-size: 30px;
+      font-weight: 600;
+      color: $text-primary;
+    }
+
+    #title {
+      font-size: 65px;
+      font-weight: 600;
+      color: white;
+    }
+
+    h5 {
+      font-weight: 300;
+    }
+
+    .btn {
+      margin-top: 25px;
+    }
+  }
+
+  .projects {
+    h1 {
+      margin-top: 3rem;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    @include set-background(white);
+  }
+}
+
+.btn {
+  margin: 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  transition: transform $transition-speed;
+  cursor: pointer;
+  font-size: 17px;
+
+  &-primary {
+    @include set-background($text-primary);
+  }
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+@import "mobile";
