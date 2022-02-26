@@ -1,16 +1,38 @@
 <template>
-    <h1>ABout page</h1>
+  <div class="about">
+    <div class="profile">
+      <div class="profile-title">
+        <h1>Who is <span class="text-primary">Kobe Ferran?</span></h1>
+      </div>
+      <div class="profile-body">
+        <img src="~@/assets/img/my-pictures/profile.png" alt="" srcset="" />
+        <p>
+          I'm a 22 year old 4<sup>th</sup> year BSIT student at Mindoro State
+          University.
+          <br />
+          <br />
+          I always loved programming since I learned it and college and
+          developed a passion in web development. Right now, I'm pursing a
+          career as a full-stack developer and using frameworks for backend and
+          frontend technologies such as Laravel and Vue.js
+          <br />
+          <br />
+          When I'm not on the desk coding, I'm a musician at church, learning some random History stuff or enjoying video games.
+        </p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'About'
-}
+  name: "About",
+};
 </script>
 
 <style scoped>
-    h1 {
-        color: white;
-        font-size: 5em;
-    }
+h1 {
+  color: white;
+  font-size: 5em;
+}
 </style>

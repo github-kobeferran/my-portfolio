@@ -2,6 +2,8 @@
 @import "cover";
 @import "modal";
 @import "projects";
+@import "about";
+@import "contact";
 
 * {
   margin: 0px;
@@ -116,6 +118,10 @@ img {
 
 .btn:hover {
   transform: scale(0.98);
+}
+
+.text-primary {
+  color: $text-primary !important;
 }
 
 @import "mobile";
