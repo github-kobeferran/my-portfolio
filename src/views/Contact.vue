@@ -6,18 +6,21 @@
       </div>
 
       <div class="contact-body">
+        
         <div>
           <a href="https://www.facebook.com/kobebryanferran">
             <i class="fa-brands fa-facebook"></i>
           </a>
           <div>Facebook</div>
         </div>
+
         <div>
           <a href="https://www.linkedin.com/in/kobe-ferran-237152218">
             <i class="fa-brands fa-linkedin"></i>
           </a>
           <div>Linkedin</div>
         </div>
+
         <div>
           <i
             @mouseover="hover = true"
@@ -27,7 +30,16 @@
             class="fa-solid fa-envelope"
           ></i>
           <div>Gmail  </div>
+        
         </div>
+
+        <div>
+          <a href="https://github.com/github-kobeferran">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <div>Github</div>
+        </div>
+
       </div>
     </div>
     <div  v-if="showEmail || hover" :class="showEmail ? 'active' : ''" class="email text-center">

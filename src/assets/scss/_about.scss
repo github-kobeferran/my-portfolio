@@ -47,6 +47,12 @@
       border: 1px solid white;
       color: white;
       text-align: center;
+
+      &:hover {
+        background-color: $text-primary;
+        border: 0.5px solid black;
+        font-weight: 900;
+      }
     }
   }
 

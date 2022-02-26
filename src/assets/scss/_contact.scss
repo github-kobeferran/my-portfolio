@@ -33,6 +33,12 @@
         color: lighten($color: $text-primary, $amount: 15%);
         transform: scale(1.1);
       }
+
+      .fa-github:hover {
+        cursor: pointer;
+        color: lighten($color: $bg-secondary, $amount: 15%);
+        transform: scale(1.1);
+      }
     }  
 
 
@@ -45,6 +51,7 @@
       cursor: pointer;
       transform: scale(1.1);
     }
+
     div {
       margin-top: 10px;
     }

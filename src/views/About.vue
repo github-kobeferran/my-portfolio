@@ -25,8 +25,8 @@
     </div>
     <!-- CV -->
     <div class="cv">
-      <a href="/asdf.pdf" class="btn">
-        Download CV
+      <a href="/resume.pdf" class="btn">
+        Download Resume
         <i class="fa-solid fa-download"></i
       ></a>
     </div>
