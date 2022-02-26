@@ -11,6 +11,7 @@ $source-sans: 'Source Sans Pro', sans-serif;
 $poppins: 'Poppins', sans-serif;
 
 $transition-speed: 200ms;
+$transition-speed-smooth: 600ms;
 $transition-speed-slower: 1000ms;
 
 @function set-text-color($color) {

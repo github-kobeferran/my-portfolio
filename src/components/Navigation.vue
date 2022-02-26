@@ -5,20 +5,33 @@
         <img src="@/assets/img/logo/logo.png" alt="">
       </a>      
       <li>
-        <a href="">
+        <router-link to="/">Home</router-link>
+        <!-- <a href="/">
           <span>Home</span>
-        </a>
+        </a> -->
       </li>
       <li>
-        <a href="">
+        <router-link to="/about">About</router-link>
+        <!-- <a href="/">
+          <span>Home</span>
+        </a> -->
+      </li>
+      <li>
+        <router-link to="/contact">Contact</router-link>
+        <!-- <a href="/">
+          <span>Home</span>
+        </a> -->
+      </li>
+      <!-- <li>
+        <a href="/about">
           <span>About</span>
         </a>
       </li>
       <li>
-        <a href="">
+        <a href="/contact">
           <span>Contact</span>
         </a>
-      </li>
+      </li> -->
 
     </ul>
   </nav>  

@@ -23,34 +23,93 @@
       display: grid;
 
       .project-card {
-        background-color: $bg-secondary;
-        color: white;
-        border: 1px solid rgba($color: #000000, $alpha: 8);
-        border-radius: 0.75rem;
+        background-color: rgb(214, 208, 208);
+        color: #333;
+        // border: 1px solid rgba($color: #000000, $alpha: 8);
+        // border-radius: 0.75rem;
+        box-sizing: border-box;
+        padding: 25px;
+        transition: all $transition-speed ease;
 
-        .card-body {
-          h3 {
+        .project-title {
+          a {
             color: $text-primary;
+            font-size: 1rem;
+            font-weight: 900;
           }
+          a:hover {
+            color: darken($color: $text-primary, $amount: 25%);
+          }
+        }
 
+        .project-body {
           display: flex;
           align-items: center;
           flex-wrap: wrap;
           text-align: left;
           line-height: 1.6;
+
+          p {
+            font-size: 1rem;
+          }
         }
 
-        .card-footer{
+        .card-footer {
           text-align: end;
-          margin-top: .5rem;
+          margin: 0;
 
-          .btn{
-            background: lighten($color: $bg-secondary, $amount: 30%);
-            
+          .btn {
             font-weight: 300;
+            font-style: italic;
+
+            &:hover {
+              color: red;
+            }
+          }
+
+          .repo-topics {
+            display: none;
+          }
+        }
+
+        &:hover {
+          transform: translateY(-20%);
+
+          .card-footer {
+            .repo-topics {
+              display: flex;
+              flex-wrap: wrap;
+              text-align: center;
+              position: absolute;
+              left: 0;
+              top: 100%;
+              font-size: 1rem;
+              align-items: flex-start;
+              justify-content: space-between;
+              width: 100%;
+              gap: 10px;
+              text-align: left;
+
+              mix-blend-mode: difference;
+
+              span {
+                text-transform: uppercase;
+              }
+            }
           }
         }
       }
     }
+  }
+}
+
+.project-footer {
+  background: url("../img/cover-images/footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &-content {
+      height: 10vh;
+         
   }
 }

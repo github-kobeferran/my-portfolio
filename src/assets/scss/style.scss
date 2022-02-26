@@ -1,6 +1,7 @@
 @import "config";
-@import "projects";
+@import "cover";
 @import "modal";
+@import "projects";
 
 * {
   margin: 0px;
@@ -15,6 +16,17 @@ body {
   a {
     text-decoration: none;
   }
+}
+
+body::-webkit-scrollbar {
+  width: .8em;
+}
+ 
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: $text-primary;
+  
+  border-radius: 1em;
 }
 
 img {
@@ -61,68 +73,31 @@ img {
 
 }
 
+/* Hamburger Button */
+
 .hamburger {
   width: 70px;
   height: 70px;    
   border-radius: 0 !important;      
   opacity: 0.9;
+
+  .icon {
+    transform: rotate(0);
+    transition: transform $transition-speed-smooth ease;
+    
+  }
 }
+
+.hamburger.active {
+  .icon {    
+    transform: rotate(180deg);    
+  }
+}
+
+/* End of Hamburger Button */
 
 .navbar.nav-transparent {
   opacity: 0.75;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-
-  .cover {
-    background: url("../img/cover-images/my-pc.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-    width: 100%;
-    line-height: 1.4;
-
-    #name {
-      font-size: 30px;
-      font-weight: 600;
-      color: $text-primary;
-    }
-
-    #title {
-      font-size: 65px;
-      font-weight: 600;
-      color: white;
-    }
-
-    h5 {
-      font-weight: 300;
-    }
-
-    .btn {
-      margin-top: 25px;
-    }
-  }
-
-  .projects {
-    h1 {
-      margin-top: 3rem;
-      font-size: 50px;
-      text-align: center;
-    }
-
-    @include set-background(white);
-  }
 }
 
 .btn {
