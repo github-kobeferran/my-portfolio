@@ -46,6 +46,7 @@
       background: $bg-secondary;
       border: 1px solid white;
       color: white;
+      text-align: center;
     }
   }
 
@@ -57,7 +58,7 @@
 
   .calendar {
     padding: 20px;
-    margin: 0 25px;
+    margin: 0 25px 25px 25px;    
   }
 
   rect.ContributionCalendar-day[data-level="0"] {

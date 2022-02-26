@@ -25,24 +25,23 @@
     </div>
     <!-- CV -->
     <div class="cv">
-      <Button>Download CV <i class="fa-solid fa-download"></i></Button>
+      <a href="/asdf.pdf" class="btn">
+        Download CV
+        <i class="fa-solid fa-download"></i
+      ></a>
     </div>
     <GitHubCalendar />
-    
   </div>
 </template>
 
 <script>
-import Button from "../components/Button";
 import GitHubCalendar from "../components/GithubCalendar";
 
 export default {
   name: "About",
   components: {
-    Button,
     GitHubCalendar,
   },
-  
 };
 </script>
 
