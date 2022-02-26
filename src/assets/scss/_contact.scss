@@ -1,3 +1,75 @@
 .contact {
-    padding-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+
+
+  &-title {
+    margin-top: 10px;
+  }
+  &-body {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    i {
+      font-size: 3em;
+    }
+    a {
+      color: white;
+
+      .fa-facebook:hover {
+        color: $text-primary;
+        cursor: pointer;
+        transform: scale(1.1);
+      }
+
+      .fa-linkedin:hover {
+        cursor: pointer;
+        color: lighten($color: $text-primary, $amount: 15%);
+        transform: scale(1.1);
+      }
+    }  
+
+
+    .fa-envelope.active {
+      color: lighten($color: red, $amount: 15%);
+    }
+
+    .fa-envelope:hover {
+      color: lighten($color: red, $amount: 15%);
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+    div {
+      margin-top: 10px;
+    }
+  }
+
+  .email {
+    position: fixed; 
+    top: 58vh;   
+    line-height: 1.6;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    animation: gmail-hover $transition-speed-smooth ease;
+  }
+
+  .email.active {
+    border-bottom: 1px solid lighten($color: red, $amount: 15%);
+  }
+
+  @keyframes gmail-hover {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
 }

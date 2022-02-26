@@ -2,49 +2,29 @@
   <nav class="navbar" :class="{ 'nav-transparent': scrollPosition > 100 }">
     <ul>
       <a href="" class="logo">
-        <img src="@/assets/img/logo/logo.png" alt="">
-      </a>      
+        <router-link to="/">
+          <img src="@/assets/img/logo/logo.png" alt="" />
+        </router-link>
+      </a>
       <li>
         <router-link to="/">Home</router-link>
-        <!-- <a href="/">
-          <span>Home</span>
-        </a> -->
       </li>
       <li>
         <router-link to="/about">About</router-link>
-        <!-- <a href="/">
-          <span>Home</span>
-        </a> -->
       </li>
       <li>
         <router-link to="/contact">Contact</router-link>
-        <!-- <a href="/">
-          <span>Home</span>
-        </a> -->
       </li>
-      <!-- <li>
-        <a href="/about">
-          <span>About</span>
-        </a>
-      </li>
-      <li>
-        <a href="/contact">
-          <span>Contact</span>
-        </a>
-      </li> -->
-
     </ul>
-  </nav>  
-  
+  </nav>
 </template>
 
 <script>
-
 export default {
   name: "Navigation",
   data() {
     return {
-      scrollPosition: null,   
+      scrollPosition: null,
     };
   },
   methods: {

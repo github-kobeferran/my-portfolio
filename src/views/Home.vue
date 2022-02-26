@@ -17,7 +17,6 @@ export default {
     },
     methods: {
     scrollToProjects() {
-      console.log("asdf");
       const el = this.$refs.projectsComponent;
 
       if (el) {
